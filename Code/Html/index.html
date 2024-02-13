@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.flex-container {
+            border: 4px solid black;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        div {
+            margin-top: 10px;
+
+        }
+
+        div.container {
+            border: 3px solid black;
+            height: 200px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        div.element {
+            border: 2px solid black;
+            height: 60px;
+            width: 50px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        div.container1 {
+            border: 3px solid black;
+            height: 200px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+
+        div.element1 {
+            border: 2px solid black;
+            height: 150px;
+            height: 60px;
+            width: 50px;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        div.container2 {
+            border: 3px solid black;
+            height: 500px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+          
+            flex-direction: column-reverse;
+        }
+
+        div.element2 {
+            border: 2px solid black;
+            height: 150px;
+            height: 60px;
+            width: 50px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        
+        }
+
+        div.wrap-container {
+            border: 4px solid black;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            resize: horizontal;
+            display: inline-block;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        div.wcontainer {
+            border: 3px solid black;
+            height: fit-content;
+            width: fit-content;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div.welement {
+            border: 2px solid black;
+            height: 150px;
+            height: 60px;
+            width: 50px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        
+        div.wcontainer1 {
+            border: 3px solid black;
+            height: fit-content;
+            width: fit-content;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.welement1 {
+            border: 2px solid black;
+            height: 150px;
+            height: 60px;
+            width: 50px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h3>flex-direction, order, flex-grow</h3>
+        <div class="container">
+            <div class="element" style="order: 3;">1</div>
+            <div class="element " style="order: 5;">2</div>
+            <div class="element" style="flex-grow: 1;">3</div>
+            <div class="element"  >4</div>
+            <div class="element">5</div>
+        </div>
+        <h3> row-reverse, flex-basis</h3>
+        <div class="container1">
+            <div class="element1" style="flex-basis: 200px;">1</div>
+            <div class="element1">2</div>
+            <div class="element1">3</div>
+            <div class="element1">4</div>
+            <div class="element1" >5</div>
+        </div>
+        <h3>column-reverse</h3>
+        <div class="container2">
+            <div class="element2">1</div>
+            <div class="element2">2</div>
+            <div class="element2">3</div>
+            <div class="element2">4</div>
+            <div class="element2">5</div>
+        </div>
+    </div>
+    <div class="wrap-container">
+        <h3>wrap</h3>
+        <div class="wcontainer">
+            <div class="welement">A</div>
+            <div class="welement">B</div>
+            <div class="welement">C</div>
+            <div class="welement">D</div>
+            <div class="welement">E</div>
+        </div>
+        <h3>wrap-reverse</h3>
+        <div class="wcontainer1">
+            <div class="welement1">A</div>
+            <div class="welement1">B</div>
+            <div class="welement1">C</div>
+            <div class="welement1">D</div>
+            <div class="welement1">E</div>
+        </div>
+    </div>
+</body>
+
+</html>
