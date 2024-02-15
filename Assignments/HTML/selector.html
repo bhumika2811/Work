@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      div p {
+        background-color: aqua;
+      }
+      div1 > p {
+        background-color: brown;
+      }
+      div2 + p {
+        background-color: yellow;
+      }
+      div3 ~ p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selectors</h1>
+    <h2>Combinator Selector</h2>
+    <div>
+      <p>This is descendant selector</p>
+      <p>This is also descendant selector</p>
+    </div>
+    <p>This is not</p>
+    <div1>
+      <p>THis is child selector</p>
+      <p>this is also</p>
+    </div1>
+    <p>this is not</p>
+    <div2>
+      <p>this is not adjacent sibling selector(inside div)</p>
+      <p>this too(inside div)</p>
+    </div2>
+    <p>this is(outside div)</p>
+    <div3>
+      <p>this is not general sibling selector</p>
+      <p>this is also</p>
+    </div3>
+    <p>this is</p>
+    <p>this is</p>
+  </body>
+</html>

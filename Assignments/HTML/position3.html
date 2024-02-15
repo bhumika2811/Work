@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        position: relative;
+        height: 50vh;
+        width: 50vw;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .child-1 {
+        position: absolute;
+        height: 50% ;
+        width: 50%;
+        border: 2px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .child-2 {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        border: 2px solid red;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body style="box-sizing: border-box;">
+    <div class="parent">
+         
+      <div class="child-1">
+      
+        <div class="child-2"></div>
+      </div>
+    </div>
+  </body>
+</html>

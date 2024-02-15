@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body
+    style="
+      background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <h1>IMAGE MAP</h1>
+    <h2>Click on the image to open youtube</h2>
+    <img
+      src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png "
+      usemap="#img"
+      height="200"
+      width="200"
+    />
+    <map name="img">
+      <area
+        shape="rect"
+        coords="6,211,245,46"
+        href="https://www.youtube.com"
+        target="_self"
+      />
+    </map>
+    <h2>Picture element</h2>
+    <picture>
+      <!-- <source media="(min-height: 650px)" srcset="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg"> -->
+      <source
+        media="(min-height: 250px)"
+        srcset="
+          https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg
+        "
+        style="height: 30px; width: 30px"
+      />
+      <img
+        src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+      />
+    </picture>
+  </body>
+</html>

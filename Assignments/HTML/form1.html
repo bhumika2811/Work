@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <script
+      src="https://kit.fontawesome.com/8829348913.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        width: 65vw;
+        box-shadow: 2px 2px 5px gray;
+        display: flex;
+        height: 80%;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        left: 20vw;
+        top: 5vh;
+        margin: 64px auto;
+        /* padding: 10px; */
+        /* box-sizing: border-box; */
+        background-color: white;
+      }
+      .img {
+        position: relative;
+        height: 100%;
+        box-sizing: border-box;
+        width: 50%;
+        background-image: url("https://images.unsplash.com/photo-1565035010268-a3816f98589a?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        /* border-radius: 13px; */
+        background-size: cover;
+
+        border-radius: inherit;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background-position: 50%;
+        /* padding: 30px; */
+      }
+
+      .frm {
+        width: 50%;
+        /* padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 30px; */
+        /* padding: 10px; */
+        height: 100%;
+        box-sizing: border-box;
+        padding-left: 5vw;
+        padding-top: 6vh;
+      }
+      .img:hover {
+        background-image: url("https://images.unsplash.com/photo-1590721791974-d6c8ca43f6bc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        transition: 3s ease;
+      }
+
+      .input {
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+        width: 80%;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 14px;
+        /* margin-left: 14px; */
+        position: relative;
+      }
+
+      .input:hover {
+        box-shadow: 0 0 1px 1px gray;
+      }
+      .label {
+        color: rgb(109, 108, 108);
+        /* margin-left: 15px; */
+      }
+      .btn {
+        color: white;
+       height: 40px;
+        background-color: #1767d1;
+        border: none;
+        width: 9vw;
+        border-radius: 4px;
+       
+
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #5385c5;
+        cursor: pointer;
+      }
+      i.fa-solid {
+        position: relative;
+        left: -40px;
+        color: gray;
+        font-size: small;
+      }
+
+      input:focus + .fa-solid {
+        color: black;
+      }
+
+      input:focus + #fa {
+        color: black;
+      }
+      body {
+        position: relative;
+        font-family: Open Sans, sans-serif;
+        margin: 0 auto;
+        overflow: hidden;
+
+        height: 100vh;
+        background-image: linear-gradient(to right, lightgray, black);
+      }
+      /* h3 {
+        /* margin-left: 1.5vw; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <h3
+          style="
+            position: absolute;
+            margin-left: 4vw;
+            bottom: 10vh;
+            color: white;
+            font-weight: 900;
+            background-color: black;
+          "
+        >
+          BRING YOUR MUSIC ALONG
+        </h3>
+        <h4
+          style="
+            position: absolute;
+            bottom: 5vh;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            left: 4vw;
+            background-color: black;
+            
+          "
+        >
+          try unlimited
+        </h4>
+        <h4 style="color: white; position: absolute; bottom: 0; left: 70%; background-color: black;">
+          $9.99/month
+        </h4>
+      </div>
+
+      <div class="frm">
+        <h3>Registration Form</h3>
+        <form>
+          <label for="name" class="label"> Full Name </label><br />
+          <input type="text" id="name" class="input" placeholder="ex:bhumika" />
+          <i class="fa-solid fa-user"></i><br />
+
+          <label for="email" class="label">Email </label><br />
+          <input
+            type="email"
+            id="email"
+            class="input"
+            placeholder="ex:abc@example.com"
+          />
+          <i class="fa-solid fa-envelope"></i><br />
+          <label for="password" class="label">Password </label><br />
+          <input type="password" id="password" class="input" />
+          <i class="fa-solid fa-lock"></i><br />
+
+          <label for="password" class="label">Confirm Password </label>
+          <input type="password" id="password" class="input" />
+          <i class="fa-solid fa-lock" id="fa"></i><br />
+          <input type="checkbox" name="check" id="check" />
+          <label for="check" style="font-size: medium; color: gray"
+            >By signing up you agree to <br />
+            <a href="" style="text-indent: 3vw; display: block">
+              Play term of service</a
+            ></label
+          >
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

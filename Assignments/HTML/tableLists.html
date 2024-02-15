@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      td,
+      th {
+        padding: 10px;
+        border: 2px dotted black;
+        text-align: center;
+      }
+      table {
+        /* display: inline; */
+        justify-content: center;
+        border-spacing: 10px;
+        border-style: solid;
+        max-width: 438px;
+        box-shadow: 3px 2px 1px black;
+      }
+      /* tr:nth-child(odd) {
+        background-color: beige;
+      } */
+      /* tr:hover {
+        background-color: antiquewhite; */
+
+      /* td:nth-child(even){
+        background-color: lightgrey;
+      } */
+    
+      td:nth-child(even):hover {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: lightslategray;
+        transition: 1s ease;
+        text-shadow: 2px 2px 1px black;
+      }
+      ul {
+        list-style-type: square;
+        background-color: black;
+      }
+      ul li::marker {
+        color: white;
+      }
+      ul li:hover::marker {
+        color: red;
+      }
+
+      ul li {
+        background-color: aqua;
+      }
+      ol {
+        list-style-type: upper-roman;
+      }
+      ul li:hover {
+        padding: 5px;
+        transition: 0.2s ease-in;
+        color: red;
+        list-style-type: circle;
+        font-weight: 1000;
+      }
+      a{
+        text-decoration: none;
+        color: green;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Table</h2>
+    <table>
+      <thead>
+        <th style="width: 300px">WEBSITE NAME</th>
+
+        <th>LINK</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google</td>
+
+          <td><a href="https://www.google.com">Google</a></td>
+        </tr>
+        <tr>
+          <td>Google Image</td>
+
+          <td><img src="/HTML/IMAGES/googleimg.ico" /></td>
+        </tr>
+        <tr>
+          <td>YouTube</td>
+          <td><a href="https://www.youtube.com">Youtube</a></td>
+        </tr>
+        <tr>
+          <td>W3Schools</td>
+          <td><a href="https://www.w3schools.com">W3</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2>Lists</h2>
+    <h3>unordered</h3>
+    <ul>
+      <li>CSS Height</li>
+      <li>Min Height</li>
+      <li>CSS Outline</li>
+    </ul>
+    <h3>ordered</h3>
+    <ol>
+      <li>CSS Height</li>
+      <li>Min Height</li>
+      <li>CSS Outline</li>
+    </ol>
+  </body>
+</html>

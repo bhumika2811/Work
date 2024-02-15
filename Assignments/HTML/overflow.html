@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <style>
+      body {
+        display: flex;
+      }
+      .div {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 30px;
+      }
+      #content {
+        overflow: visible;
+      }
+      #content1 {
+        overflow: auto;
+      }
+      #content2 {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+      .main {
+        height: 40vh;
+        width: 50vw;
+        border: 2px solid black;
+        overflow: auto;
+       
+      }
+      .element-1 {
+        border: 2px solid black;
+        height: 20vh;
+        width: 10vw;
+        margin: 10px;
+        overflow: auto;
+        overscroll-behavior: contain;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="div" id="content">
+      <h4>Overflow:Visible</h4>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus,
+      soluta deleniti. Ullam dignissimos amet beatae excepturi mollitia optio
+      quisquam minima est facere repellat dolores, sit tempore quod? Iste,
+      eligendi maiores.
+    </div>
+    <div class="div" id="content1">
+      <h4>Overflow:Auto</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis
+      deleniti ab, deserunt corrupti dolore, optio ut voluptas adipisci unde
+      sequi aut earum quod enim consequuntur debitis repellendus molestiae quia
+      similique, iste corporis. Commodi quasi, ea rem quas repellat doloribus
+      animi aperiam. Rerum odit quibusdam expedita repudiandae explicabo nemo
+      quos.
+    </div>
+    <div class="div" id="content2">
+      <h4>Overflow:Scroll</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam rerum
+        nulla laudantium temporibus iste soluta nemo voluptate qui minima natus
+        iure perferendis quo inventore sapiente sunt repudiandae dolores,
+        deserunt laborum modi ipsa. Velit tenetur veniam natus quos aliquid
+        excepturi saepe, ratione blanditiis minima eum ullam fugit distinctio
+        nesciunt tempore? Consequuntur. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Doloribus, delectus.
+      </p>
+    </div>
+    <div class="main">
+      <div class="element-1">
+        <h3></h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        laboriosam nisi mollitia sunt, laudantium minus magni ratione modi
+        molestiae, doloremque unde maiores, ex vero soluta enim molestias
+        incidunt? Quibusdam excepturi, esse nemo quo aspernatur amet, nesciunt
+        praesentium laudantium, omnis porro eum ut magni at. Explicabo aperiam
+        vel voluptate minima rem?
+      </div>
+     
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+        voluptatem architecto sint, alias molestias fugiat quas iure dolor
+        exercitationem aliquam est corporis, molestiae doloremque possimus earum
+        dolore omnis ab deserunt ullam quos optio accusamus debitis animi. Ipsam
+        ex aliquid debitis, cumque quisquam possimus culpa ipsum impedit id
+        minima, aut distinctio. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Illum necessitatibus earum laborum assumenda eius quia
+        in optio veritatis odit quas, provident ipsum repellendus libero commodi
+        aut velit magni dignissimos sit qui vitae odio? In velit accusantium
+        pariatur, quo expedita fuga totam adipisci cupiditate sit nihil ad iusto
+        corporis eius minus assumenda, temporibus maiores dolor earum, ullam
+        dolorem soluta. Enim consequuntur voluptate saepe alias, aliquid,
+        corrupti natus nobis fugit tempore nulla magnam accusantium veritatis
+        totam quae. Eaque ab, cumque sunt voluptas molestias perferendis eos
+        nemo nulla dolores dicta consectetur quod doloremque libero similique
+        nobis atque omnis quia? Labore ipsa voluptas ut?
+      </p>
+    </div>
+  </body>
+</html>

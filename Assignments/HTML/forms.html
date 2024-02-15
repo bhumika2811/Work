@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <form action="borders.html" target="_self">
+        <fieldset style="width: 30px; border-color: red;">
+        <legend style="color: teal;">Info</legend>
+      <label for="name">Name: </label><br />
+      <input type="text" id="name" size="50"/><br /><br />
+
+      <label for="password">Password: </label><br />
+      <input type="password" id="password" /><br /><br />
+
+      <label for="email">Email: </label><br />
+      <input type="email" id="email" /><br /><br />
+      <input list="browsers">
+   
+      <label for="phone">Phone: </label><br />
+      <input type="number" id="phone" /><br /><br />
+    </fieldset>
+<!-- radiobuttons -->
+<fieldset style="width: 300px;">
+<legend>Gender </legend>
+      
+
+      <input type="radio" id="option1" name="group" />
+      <label for="option1">Male</label>
+        
+      <input type="radio" id="option2" name="group" />
+      <label for="option2">Female</label><br /><br />
+      </fieldset>
+<!-- checkboxes -->
+<fieldset style="width: 300px;">
+    <legend>Skills</legend>
+      <label for="check"> </label><br />
+
+      <input type="checkbox" id="check1" name="cgroup"  />
+      <label for="check1">HTML/CSS</label>
+      <input type="checkbox" id="check2" name="cgroup" />
+      <label for="check2">React</label>
+      <input type="checkbox" id="check3" name="cgroup" />
+      <label for="check3">React native</label><br /><br />
+    </fieldset >
+      <!-- without multiple -->
+      <label for="cars">Choose cars:</label>
+      <select id="cars" name="cars">
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="choose" selected>Choose any</option>
+</select>
+<!-- with multiple -->
+        <label for="cars1">Choose a car:</label>
+      <select id="cars1" name="cars1" size="4" multiple>
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="maruti">Maruti</option>
+    </select><br><br>
+
+
+    <label for="txtarea">textarea</label>
+    <textarea rows="2" cols="30" id="txtarea" style="resize: none;"></textarea>
+ 
+
+      <br /><br />
+      <input type="submit" id="submit" />
+      <button name="btn" onclick="alert('yo sup')">Click</button>
+    </form>
+  </body>
+</html>

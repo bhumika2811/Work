@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes</title>
+    <style>
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: pink;
+      }
+      a:active{
+        color: blue;
+      }
+      div:hover{
+        background-color: aqua;
+      }
+      p{
+        display: none;
+        background-color: grey;
+      }
+      div1:hover p{
+        display: block;
+      }
+      h3::first-line{
+        color: red;
+      }
+      h3::first-letter{
+        font-size: larger;
+        color: green;
+      }
+      h2::before{
+        content: url("googleimg.png");
+      }
+      h2::after{
+        content: url("googleimg.png");
+      }
+      ::marker{
+        color: green;
+      }
+      ::selection{
+        background-color: yellow;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-classes</h1>
+    <a href="">this is link </a>
+    
+    <div>
+        hover me
+    </div>
+    <div1>
+        hover me to see the tooltip
+        <p>here is the tooltip</p>
+    </div1><br>
+    <h3>First line  and letter element, 
+         repellat praesentium recusandae, minus sint, aliquam tempora sunt eos 
+         soluta a quos? Ut, explicabo voluptatum rem assumenda accusamus temporibus qui!</h3>
+         <h2>image before and after</h2><br>
+         <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+         </ul>
+  </body>
+</html>

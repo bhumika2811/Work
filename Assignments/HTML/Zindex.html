@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z index</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      .one {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        z-index: 0;
+        /* position: relative; */
+        opacity: 0.7;
+     
+      }
+      .two {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        z-index: 1;
+        position: absolute;
+        bottom: 50vh;
+        opacity: 0.7;
+      }
+      .three{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        position: absolute;
+        bottom: 60vh;
+        z-index: 2;
+        opacity: 0.6;
+      }
+      .four{
+        height: 160px;
+        width: 169px;
+        background-color: brown;
+        position: absolute;
+        bottom: 70vh;
+        left: 52vw;
+        z-index: 3;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">z-index0</div> 
+      <div class="two">z-index1</div>
+    <div class="three">z-index2</div>
+    <div class="four">z-index3</div>
+  </body>
+</html>

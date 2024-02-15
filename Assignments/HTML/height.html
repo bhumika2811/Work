@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height in CSS</title>
+    <style>
+      h2 {
+        margin: 3px;
+      }
+      .auto {
+        display: block;
+        border: 1px solid black;
+        height: auto;
+        width: fit-content;
+      }
+      .custom {
+        overflow: auto;
+        /* display: block; */
+        border: 1px solid black;
+        height: 90px;
+        width: 300px;
+      }
+      .max {
+        border: 1px solid black;
+        /* display: inline-block; */
+      }
+      .btn {
+        padding: 10px;
+        border: 0;
+        background-color: yellow;
+      }
+      .btn:hover {
+        outline-style: dotted;
+        outline-color: black;
+
+        background-color: aquamarine;
+      }
+      .btn1 {
+        padding: 10px;
+        border: 0;
+        background-color: yellow;
+      }
+      .btn1:hover {
+        outline-style: dotted;
+        outline-color: black;
+         outline-offset: 5px;
+       
+        background-color: aquamarine;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="auto">
+      <h2>With auto height and width</h2>
+      width auto!<br />
+      width auto!<br />
+      width auto!<br />
+      width auto!<br />
+      width auto!<br />
+      width auto!<br />
+      width auto!<br />
+      width auto!<br /><br /><br />
+      width auto!<br />
+    </div><hr>
+    <br />
+    <div class="custom">
+      <h2>With custom height and width</h2>
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+      width custom!<br />
+    </div><hr>  
+    <br />
+    <div class="max">
+      <h2>Min/Max-width Min/Max-height</h2>
+      <textarea 
+        style="
+          max-height: 150px;
+          min-height: 100px;
+          max-width: 200px;
+          min-width: 100px;
+         
+        "
+        placeholder="max-height and max-width min-height and min-width"
+      ></textarea>
+    </div>
+    <br />
+    <span>
+      <h2>Outlines</h2>
+      <button class="btn">Outline button</button>&nbsp;&nbsp;
+      <button class="btn1">Outline button offset 5px</button>
+    </span>
+  </body>
+</html>
