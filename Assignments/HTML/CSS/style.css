@@ -129,12 +129,14 @@
 .btn-content{
     position: absolute;
     z-index: 9;
-    width: 60%;
+    width: 90%;
     top: 13rem;
     left: 5rem;
     
 }
-
+.txt-content{
+  width: 65%;
+}
 .txt{
 
     font-family: "Permanent Marker", handwriting;
@@ -207,6 +209,31 @@
   }
   .social {
     line-height: 28px;
+  }
+  .arrow-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 10rem;
+    position: absolute;
+    
+    right: 0;
+    bottom: 0;
+  }
+  .arrow{
+    color: #ffffff;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 10px;
+   background-color: transparent;
+   border: 2px solid #c1f7d5;
+   margin: 2px;
+   border-radius: 100px;
+    
   }
   .fa-regular {
     color: white;
@@ -319,6 +346,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex: 1;
   }
   .container-5{
     display: flex;
@@ -332,17 +360,18 @@
    background-color: #f5f6f8;;
     width: 100%;
     height: 100%;
-   
+  
   }
   .content{
-    
+    margin: 0 auto;
     display: flex;
     height: 100%;
     flex-direction: row;
-    padding-left: 5rem;
+    width: 80%;
+    /* padding-left: 5rem;
     padding-right: 5rem;
      padding-top: 3rem;
-     padding-bottom: 5rem;
+     padding-bottom: 5rem; */
   }
   .image{
     flex: 2;
@@ -373,14 +402,23 @@
  .form-container{
     display: flex;
     flex-direction: row;
-    padding-left: 5rem;
+    
+    width: 100%;
+  
  }
 .form-cont form{
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
     width: 30rem;
     align-items: start;
+   
+}
+.form-2{
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  align-items: center;
 }
 input{
     background-color: #e2e3e7;
@@ -408,9 +446,10 @@ input{
     margin-bottom: 5rem;
 }
 .msg-container{
-  flex: 0.5;
-  padding-top: 11rem;
+  flex: 1;
+ 
   padding-left: 6rem;
+  width: 100%;
 }
 textarea{
   background-color: #e2e3e7;
@@ -421,7 +460,8 @@ textarea{
   font-size: 14px;
   border-radius: 50px;
   padding: 2rem;
-  width: 30rem;
+
+  
 }
 footer{
   background-color: #354463;
