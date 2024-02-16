@@ -271,27 +271,36 @@
     position: relative;
     display: flex;
     flex-direction: row;
-   
+   align-items: center;
+   justify-content: center;
   }
   .contain-txt {
     margin-top: 5.2rem;
-    margin-left: 5.5rem;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding-right: 5rem;
+    width: 35%;
+    padding-right: 9rem;
+    
   }
   .contain-img {
-    position: absolute;
-    width: 36%;
+
+    position: relative;
+    width: 40%;
     height: 87%;
     right: 0;
     display: flex;
     margin-top: 5rem;
-    margin-right: 5.2rem;
     filter: grayscale(1);
     justify-content: center;
     flex-direction: column;
+  }
+  .contain-img-txt{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     width: 50%;
+    left: 10rem;
   }
   .loremtxt {
     font-family: "Quicksand", sans-serif;
@@ -326,25 +335,22 @@
   
   }
 
-  .image-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .img-content{
+ 
+.img-txt{
     position: absolute;
+    color: white;
+    z-index: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9;
     flex-direction: column;
-    
-  }
-
+    align-items: center;
+    margin: auto 0;
+}
 
   .img-3{
-   
+    display: flex;
+    align-items: center;
+   position: relative;
    object-fit: cover;
    object-position: top center;
     width: 33.5%;
@@ -373,12 +379,51 @@ padding: 3rem;
     flex-direction: row;
   }
   .img-cont{
+    position: relative;
     height:25rem;
    display: flex;
    justify-content: center;
    align-items: center;
    flex: 1;
  
+  }
+  .business-law-txt{
+    background-color: #c1f7d5;
+    margin-bottom: 1.7rem;
+    margin-bottom: 1.7rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    font-weight: bold;
+    padding: 6px 13px;
+    color: #4a4c70;
+    border-radius: 5px;
+  }
+  .insurance-law-txt{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.3rem;
+  }
+  .lorem-txt{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    width: 60%;
+  }
+  .price-txt{
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 2rem;
+    
   }
   .txt-service{
     padding: 3rem;
